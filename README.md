@@ -24,6 +24,8 @@ This samples uses the following keyboard and gamepad controls
 ## How the Sample works
 The core of this sample is in the function `TurnToFace`, which uses trigonometry to determine the "desired angle" that he spotlight should be facing, then turns toward that angle.  How do you calculate the desired angle?
 
+![In this diagram, S is the position of hte spot light, C is the position of hte cat, and "o" is the angle that the spot light should be facing in order to point at the cat, our "desired angle."](Aiming.png)
+
 In this diagram, S is the position of hte spot light, C is the position of hte cat, and "o" is the angle that the spot light should be facing in order to point at the cat, our "desired angle."
 
 We know x and y: those are the difference in position between the cat's position and the spotlight's position.  Using trigonometry, we know that:
