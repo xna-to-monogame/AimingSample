@@ -1,5 +1,5 @@
 # Aiming Sample
-Archived source code of the XNA 4.0 Aiming Sample from the Microsoft's Education Catalog for XNA. 
+XNA 4.0 Aiming Sample ported to MonoGame 3.8.1
 
 ![Preview screenshot fo the sample game being created.  In this screenshot you can see a spotlight aimed at an image of a cat](GameThumbnail.png)
 
@@ -18,10 +18,10 @@ THe function `TurnToFace` does the hard work in this sample.  You can copy it an
 ## Sample Controls
 This samples uses the following keyboard and gamepad controls
 
-| Action           | Keyboard Control (Windows)                        | Gamepad Control         | Windows Phone |
-| ---------------- | ------------------------------------------------- | ----------------------- | ------------- |
-| Move the cat.    | UP ARROW, DOWN ARROW, LEFT ARROW, AND RIGHT ARROW | Right Thumbstick, D-Pad | Touch         |
-| Exit the sample. | ESC or ALT+F4                                     | **BACK**                | **BACK**      |
+| Action           | Keyboard Control (Desktop)                        | Gamepad Control         |
+| ---------------- | ------------------------------------------------- | ----------------------- |
+| Move the cat.    | UP ARROW, DOWN ARROW, LEFT ARROW, AND RIGHT ARROW | Right Thumbstick, D-Pad |
+| Exit the sample. | ESC or ALT+F4                                     | **BACK**                |
 
 ## How the Sample works
 The core of this sample is in the function `TurnToFace`, which uses trigonometry to determine the "desired angle" that he spotlight should be facing, then turns toward that angle.  How do you calculate the desired angle?
