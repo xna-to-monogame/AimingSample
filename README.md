@@ -1,6 +1,8 @@
 # Aiming Sample
 Archived source code of the XNA 4.0 Aiming Sample from the Microsoft's Education Catalog for XNA. 
 
+![Preview screenshot fo the sample game being created.  In this screenshot you can see a spotlight aimed at an image of a cat](GameThumbnail.png)
+
 ## Description
 This sample shows how to turn one object to face another.  This can be useful for aiming, for example.
 
