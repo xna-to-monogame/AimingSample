@@ -42,3 +42,14 @@ Once we have the desired angle, it is relatively simple to turn towards that ang
 
 ## Extending the Sample
 Try using `TurnToFace` to make one object turn toward another as it moves: it can be used to make objects move toward or away from one another.  To see how this would work, try adding the following code to the sample's **Update** function, right after *spotlightAngle* is calculated.
+
+```cs
+Vector2 spotlightVelocity = new Vector2();
+spotlightVelocity.X = (float)Math.Cos(spotlightAngle);
+spotlightVelocity.Y = (float)Math.Sin(spotlightAngle);
+spotlightPosition += spotlightVelocity;
+```
+
+This will make the spotlight move towards the cat.  This could be useful in a variety of different situations.  For example, in a racing game, AI controlled cars could use `TurnToFace` to steer toward waypoints on the track.
+
+© 2010 Microsoft Corporation. All rights reserved.
