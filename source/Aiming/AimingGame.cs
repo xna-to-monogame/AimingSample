@@ -74,17 +74,8 @@ namespace Aiming
 
             Content.RootDirectory = "Content";
 
-#if WINDOWS_PHONE
-            graphics.PreferredBackBufferWidth = 480;
-            graphics.PreferredBackBufferHeight = 800;
-
-            TargetElapsedTime = TimeSpan.FromTicks(333333);
-
-            graphics.IsFullScreen = true;
-#else
             graphics.PreferredBackBufferWidth = 853;
             graphics.PreferredBackBufferHeight = 480;
-#endif
         }
 
 
@@ -266,11 +257,7 @@ namespace Aiming
         /// </summary>
         void HandleInput()
         {
-#if WINDOWS_PHONE
-            KeyboardState currentKeyboardState = new KeyboardState();
-#else
             KeyboardState currentKeyboardState = Keyboard.GetState();
-#endif
             GamePadState currentGamePadState = GamePad.GetState(PlayerIndex.One);
             MouseState currentMouseState = Mouse.GetState();
 
@@ -333,25 +320,4 @@ namespace Aiming
 
         #endregion
     }
-
-
-    #region Entry Point
-
-#if WINDOWS || XBOX
-    /// <summary>
-    /// The main entry point for the application.
-    /// </summary>
-    static class Program
-    {
-        static void Main()
-        {
-            using (AimingGame game = new AimingGame())
-            {
-                game.Run();
-            }
-        }
-    }
-
-#endif
-    #endregion
 }
