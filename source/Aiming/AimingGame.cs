@@ -20,7 +20,7 @@ namespace Aiming
     /// this sample showing how to aim one object towards another. In this sample, a
     /// spotlight turns to aim towards a cat that the player controls.
     /// </summary>
-    public class AimingGame : Microsoft.Xna.Framework.Game
+    public class AimingGame : Game
     {
         #region Constants
 
@@ -61,7 +61,7 @@ namespace Aiming
 
         // ...catPosition is the cat's position on the screen...
         Vector2 catPosition = new Vector2();
-        
+
         // ...and catOrigin is the origin of catTexture. the sprite will be drawn
         // centered around this value.
         Vector2 catOrigin = new Vector2();
