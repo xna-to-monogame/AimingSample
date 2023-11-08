@@ -42,11 +42,14 @@ namespace Aiming
         // these four values control the spotlight and how it draws.
         // first is the actual sprite that we'll draw to represent the spotlight.
         Texture2D spotlightTexture;
+
         // next is the position of the spotlight on the screen.
         Vector2 spotlightPosition = new Vector2();
+
         // the origin of the spotlightTexture. The spotlight will rotate around this
         // point.
         Vector2 spotlightOrigin = new Vector2();
+
         // the angle that the spotlight is currently facing. this is in radians. a value
         // of 0 points to the right.
         float spotlightAngle = 0.0f;
@@ -55,8 +58,10 @@ namespace Aiming
         // these next three variables control the cat. catTexture is the sprite that
         // represents the cat...
         Texture2D catTexture;
+
         // ...catPosition is the cat's position on the screen...
         Vector2 catPosition = new Vector2();
+        
         // ...and catOrigin is the origin of catTexture. the sprite will be drawn
         // centered around this value.
         Vector2 catOrigin = new Vector2();
