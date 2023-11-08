@@ -1,3 +1,5 @@
 ﻿
-using var game = new Aiming.Game1();
+using Aiming;
+
+using var game = new AimingGame();
 game.Run();
